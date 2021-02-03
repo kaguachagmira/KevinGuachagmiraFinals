@@ -1,0 +1,16 @@
+<div *ngIf="hero">
+
+  <label>
+    <h3> Nombre:
+      <input [(ngModel)]="hero.name" placeholder="Edita el nombre del Heroe seleccionado"/>
+    </h3>
+    <h3>Id:
+      <input [(ngModel)]="hero.id" placeholder="Edita el id del Heroe seleccionado"/>
+    </h3>
+
+  </label>
+  <h3>El nombre del heroe seleccionado es : {{hero.name | uppercase}}</h3>
+  <h3>El id del heroe seleccionado es : {{hero.id}}</h3>
+
+  <button (click)="goBack()">go back</button>
+</div>
